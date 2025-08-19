@@ -11,7 +11,7 @@ jobs:
      shell: bash
      run: wc -l helloworld.js > /tmp/linesofcode.txt
    - name: Send email
-     uses: devellany/send-mailer@v1.0.2
+     uses: devellany/send-mail@45dbe31722b9c29635bc9d
      with:
       host: smtp.google.com
       account: ${{secrets.ACCOUNT}}
