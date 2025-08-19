@@ -8,7 +8,6 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: Get wordcount
-     working-directory: cloudsystemenlinesofcode/
      shell: bash
      run: wc -l HelloWorld.js > /tmp/linesofcode.txt
    - name: Send mailer
