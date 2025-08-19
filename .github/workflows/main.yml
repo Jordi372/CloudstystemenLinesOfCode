@@ -10,8 +10,8 @@ jobs:
    - name: Get wordcount
      shell: bash
      run: wc -l helloworld.js > /tmp/linesofcode.txt
-   - name: Send email
-     uses: devellany/send-mail@45dbe31722b9c29635bc9d
+   - name: Send mailer
+     uses: devellany/send-mail@v1.0.2
      with:
       host: smtp.google.com
       account: ${{secrets.ACCOUNT}}
