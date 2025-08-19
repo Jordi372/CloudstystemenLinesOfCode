@@ -8,9 +8,9 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: Get wordcount
-     shell: bash
      working-directory: /
-     run: wc -l helloworld.js > /tmp/linesofcode.txt
+     shell: bash
+     run: wc -l HelloWorld.js > /tmp/linesofcode.txt
    - name: Send mailer
      uses: devellany/send-mail@v1.0.2
      with:
